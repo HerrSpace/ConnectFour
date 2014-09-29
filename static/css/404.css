@@ -1,0 +1,13 @@
+body {
+	overflow: hidden;
+}
+
+#error_404 {
+	width: 100%;
+}
+
+#error_404 img{
+	overflow: hidden;
+	display: block;
+	margin: 15% auto;
+}
