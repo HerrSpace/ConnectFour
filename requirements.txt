@@ -1,0 +1,4 @@
+CherryPy==5.1.0
+Jinja2==2.8
+Routes==2.2
+ws4py==0.3.4
