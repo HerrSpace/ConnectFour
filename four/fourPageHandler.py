@@ -8,10 +8,7 @@ from jinja2 import Environment, PackageLoader
 env = Environment(loader=PackageLoader('four', 'templates'))
 
 class Four(object):
-	def __init__(self, host, port):
-		self.host = host
-		self.port = port
-
+	def __init__(self):
 		self.four_template = env.get_template('four.html')
 		self.control_channel_template = env.get_template('control_channel.js')
 
@@ -22,5 +19,5 @@ class Four(object):
 
 # AJAX {{{
 	def control_channel(self, session):
-		return self.control_channel_template.render(sid=session, host=self.host, port=self.port)
+		return self.control_channel_template.render(sid=session)
 # }}}

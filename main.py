@@ -20,8 +20,7 @@ class Root():
 
 
 if __name__ == '__main__':
-	#ip = '127.0.0.1'
-	ip = '193.22.75.10'
+	ip = '0.0.0.0'
 	port = 8080
 
 	static_root = os.path.abspath(os.path.join(os.path.dirname(__file__), 'static'))
@@ -34,7 +33,7 @@ if __name__ == '__main__':
 	cherrypy.config.update({'error_page.404': 'static/templates/404.html'})
 
 	index_controller = Root()
-	game_controller = Four(ip, port)
+	game_controller = Four()
 
 	d = cherrypy.dispatch.RoutesDispatcher()
 	d.connect(name='root',		action='index',				controller=index_controller,	route='/')

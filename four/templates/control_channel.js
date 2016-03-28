@@ -1,6 +1,12 @@
 var memberDiv = "#jsGame";
-var websocket = 'ws://{{host}}:{{port}}/ws';
 var session   = '{{sid}}';
+var loc = window.location, websocket;
+if (loc.protocol === "https:") {
+	websocket = "wss:";
+} else {
+	websocket = "ws:";
+}
+websocket += "//" + loc.host + "/ws";
 
 var players = [];
 
