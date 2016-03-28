@@ -3,7 +3,7 @@ import json
 import uuid
 from ws4py.websocket import WebSocket
 
-from session import Session
+from .session import Session
 
 import logging
 logging.basicConfig(level=logging.INFO)

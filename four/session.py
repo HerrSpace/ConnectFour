@@ -188,7 +188,7 @@ class Session:
 								(newX + offsetX + 2, newY), 
 								(newX + offsetX + 3, newY)]
 
-				except Exception, e:
+				except Exception as e:
 					pass
 
 			return False
@@ -205,7 +205,7 @@ class Session:
 								(newX, newY + offsetY + 2), 
 								(newX, newY + offsetY + 3)]
 
-				except Exception, e:
+				except Exception as e:
 					pass
 
 			return False
@@ -222,7 +222,7 @@ class Session:
 								(newX + offsetXY + 2, newY + offsetXY + 2),
 								(newX + offsetXY + 3, newY + offsetXY + 3)]
 
-				except Exception, e:
+				except Exception as e:
 					pass
 
 			return False
@@ -239,7 +239,7 @@ class Session:
 								(newX + offsetXY + 2, newY - offsetXY - 2),
 								(newX + offsetXY + 3, newY - offsetXY - 3)]
 
-				except Exception, e:
+				except Exception as e:
 					pass
 
 			return False
