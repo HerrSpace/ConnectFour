@@ -13,7 +13,7 @@ sys.path.append(os.path.dirname(__file__))
 
 class Root():
 	def index(self):
-		raise cherrypy.HTTPRedirect("/four/")
+		raise cherrypy.HTTPRedirect("/four/example_session")
 
 	def ws(self):
 		cherrypy.log("Handler created: %s" % repr(cherrypy.request.ws_handler))
